@@ -9,9 +9,10 @@ public class Fruit {
     @Id
     @GeneratedValue(strategy = GenerationType.IDENTITY)
     private int id;
+
     @Column(length = 50)
     private String name;
-    //@Column(name = "quantity_kg")
+    
     private int quantityKg;
 
     protected Fruit() {
