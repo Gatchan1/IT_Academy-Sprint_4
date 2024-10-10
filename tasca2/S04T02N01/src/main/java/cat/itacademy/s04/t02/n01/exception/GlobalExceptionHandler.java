@@ -15,7 +15,7 @@ public class GlobalExceptionHandler {
     private static final Logger log = LoggerFactory.getLogger(FruitController.class);
 
     @ExceptionHandler(NoFruitFoundException.class)
-    public ResponseEntity<String> handleNotFoundFruitException(NoFruitFoundException e) {
+    public ResponseEntity<String> handleNoFruitFoundException(NoFruitFoundException e) {
         log.error("Error due to already existing entry in database: " + e.getMessage());
         return new ResponseEntity<>(e.getMessage(), HttpStatus.NOT_FOUND);
     }
