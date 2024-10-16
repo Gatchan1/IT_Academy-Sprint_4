@@ -1,17 +1,17 @@
-package cat.itacademy.s04.t02.n02.service.impl;
+package cat.itacademy.s04.t02.n01.service.impl;
 
-import cat.itacademy.s04.t02.n02.exception.custom.DuplicateFruitException;
-import cat.itacademy.s04.t02.n02.exception.custom.NoFruitFoundException;
-import cat.itacademy.s04.t02.n02.model.Fruit;
-import cat.itacademy.s04.t02.n02.repository.FruitRepository;
-import cat.itacademy.s04.t02.n02.service.FruitServiceInterface;
+import cat.itacademy.s04.t02.n01.exception.custom.DuplicateFruitException;
+import cat.itacademy.s04.t02.n01.exception.custom.NoFruitFoundException;
+import cat.itacademy.s04.t02.n01.model.Fruit;
+import cat.itacademy.s04.t02.n01.repository.FruitRepository;
+import cat.itacademy.s04.t02.n01.service.FruitService;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
 
 @Service
-public class FruitService implements FruitServiceInterface {
+public class FruitServiceImpl implements FruitService {
 
     @Autowired
     private FruitRepository fruitRepository;
